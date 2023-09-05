@@ -1,0 +1,21 @@
+<script>
+    var miCuaderno = {
+        "color" : "verde",
+        "categoria" : 3,
+        "precio" : 4.56
+    }
+
+    console.log(miCuaderno.hasOwnProperty("color"));
+    console.log(miCuaderno.hasOwnProperty("olor"));
+
+    function ValidProp (obj, prop){
+        if (obj.hasOwnProperty(prop)){
+            return "La propiedad " + prop + " existe en el objeto " + obj + ".";
+        } else { 
+            return "La propiedad " + prop + " NO existe en el objeto " + obj + ".";
+        }
+    }
+
+    console.log(ValidProp(miCuaderno, "color"));
+    console.log(ValidProp(miCuaderno, "olor"));
+</script>
